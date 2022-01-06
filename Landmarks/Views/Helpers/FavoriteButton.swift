@@ -1,9 +1,9 @@
-//
-//  FavoriteButton.swift
-//  Landmarks
-//
-//  Created by Sarah Trop on 1/3/22.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A button that acts as a favorites indicator.
+*/
 
 import SwiftUI
 
@@ -13,8 +13,8 @@ struct FavoriteButton: View {
     var body: some View {
         Button {
             isSet.toggle()
-        } label:  {
-            Label("Toggle Favorite", systemImage: isSet ? "star.fill": "star")
+        } label: {
+            Label("Toggle Favorite", systemImage: isSet ? "star.fill" : "star")
                 .labelStyle(.iconOnly)
                 .foregroundColor(isSet ? .yellow : .gray)
         }

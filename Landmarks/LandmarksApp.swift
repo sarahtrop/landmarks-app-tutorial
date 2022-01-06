@@ -1,9 +1,9 @@
-//
-//  LandmarksApp.swift
-//  Landmarks
-//
-//  Created by Sarah Trop on 1/3/22.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+The top-level definition of the Landmarks app.
+*/
 
 import SwiftUI
 
@@ -14,6 +14,7 @@ struct LandmarksApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(modelData)
         }
     }
 }
